@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Academy Street Music | Lessons and Music Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Academy Street Music</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#lessons">Lessons</a></li>
+            <li><a href="#videos">Video</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="banner" id="home">
+        <div class="textBx">
+            <h2>Hello, I'm<br><span>Tom</span></h2>
+            <h3>I'm a guitar player.</h3>
+            <a href="#about" class="btn">About Me</a>
+        </div>
+    </section>
+
+    <section class="About", id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+        </div>
+        <div class="content">
+            <div class="contentBx w50">
+                <h3>I'm a lifelong student of music.</h3>
+                <p>I've worn many professional hats, 
+                    but ay the core of it all was the passion for and disclipine 
+                    from a life-long puresuit of musical expression<br><br>I have a passion for teaching,
+                    and hope you find the information on this page helpful. I hope to build a space filled with useful knowledge, practice tools, guides, 
+                    and interactive lessons for students of all ages. <br><br> There will also be a space for students to interact, post clips of their playing, and 
+                    learn from each other in a private space.</p>
+            </div>
+            <div class="w50">
+                <img src="img1.jpg" class="img">
+            </div>
+        </div>
+    </section>
+
+    <section class="lessons", id="lessons">
+        <div class="heading white">
+            <h2>Lessons</h2>
+            <p>Everything I teach is uniquely tailored to each student. Everyone comes from their own background with a unique set of experience already in place,
+            and no singular, rigid, curriculum can deliver this to every student with success. Together, we craft a learning path that encompasses all necessary
+            knowledge and skill, but we will approach it in a way you understand, at your own pace.</p>
+        </div>
+        <div class="lessonscontent">
+            <div class="lessonsBx">
+                <img src="icon1.png">
+                <h2>Technique</h2>
+                <p>Picking, chops, speed, accuracy, the skills that allow you to play with confidence. Your unique voice on the instrument comes from the infinite variables
+                in 'how' you play: the pick's attack on the string, where along the string you pick, the shape of your vibrato. Elements of technique are broken down and
+                the skills you are most interested in are focused on.</p>
+            </div>
+            <div class="lessonsBx">
+                <img src="icon2.png">
+                <h2>Music Theory</h2>
+                <p>Scales, Chords - Melody, Harmony and Rhythm - these are the gears that we can examine to understand the sounds that we hear in music. To me, music theory is
+                like the 'recipe' for a sound - there for you to learn from so you can play with the recipe and find your own path in the universe of music. Styles add diversity
+                to the sounds we hear - it is why country music and jazz have difference vocabularies, much like the difference between Cajun and Nordic cuisine.</p>
+            </div>
+            <div class="lessonsBx">
+                <img src="icon3.png">
+                <h2>Repertoire</h2>
+                <p>Learn your favorite songs with custom transcriptions and video guides of your favorite artists. The whole point here is to have fun and develop a musical
+                vocabulary. Music is not made in to stay in a bubble, and through learning your favorite songs you will learn to appy the concepts in our lessons to real life
+                music.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="videos", id="videos">
+        <div class="heading">
+            <h2>Videos</h2>
+            <p>THIS SPACE FOR VIDEOS</p>
+        </div>
+        <div class="content">
+            <div class="videosBx">
+                <iframe width="1120" height="630" src="https://www.youtube.com/embed/DTgiZbaMRVU?start=770" title="YouTube video player" frameborder="0" allow="accelerometer; 
+                autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="heading">
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact", id="contact">
+        <div class="heading white">
+            <h2>Contact Me</h2>
+            <P>I am always available for on-line and in-person lessons.</P>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon">
+                            <img src="email.png">
+                        </div>
+                        <div class="text">
+                            <h3>email:</h3>
+                            <p>tomspearsinc@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <img src="mappin.png">
+                        </div>
+                        <div class="text">
+                            <h3>Studio Location:</h3>
+                            <p>Califon, NJ 07830</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formBx">
+                <form>
+                    <h3>Send Me a Message!</h3>
+                    <input type="text" name="" placeholder="Full Name">
+                    <input type="email" name="" placeholder="Email">
+                    <textarea placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="copyright">
+        <p>Copyright © 2022 Thomas Spears Music. All Rights Reserved.</p>
+    </div>
+    
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
