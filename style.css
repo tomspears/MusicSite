@@ -189,6 +189,17 @@ img
     justify-content: center;
     flex-wrap: wrap;
 }
+.videos .content h2
+{
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.videos .content h3
+{
+    font-size: 1em;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
 .contact
 {
     background: black;
